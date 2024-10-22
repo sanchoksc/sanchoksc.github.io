@@ -1,0 +1,345 @@
+/* General Styles */
+body {
+    font-family: 'Open Sans', sans-serif; /* Consistent font style */
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+.content {
+    padding: 40px;
+}
+
+h2 {
+    font-size: 28px; /* Smaller font size */
+    color: #2c3e50;
+    border-bottom: 2px solid #2980b9;
+    padding-bottom: 10px;
+    margin-bottom: 25px;
+    letter-spacing: 1px;
+    font-style: italic; /* Italicized */
+}
+
+h3 {
+    font-size: 22px; /* Smaller font size */
+    color: #34495e;
+    margin-bottom: 15px;
+    font-weight: 600;
+    font-style: italic; /* Italicized */
+}
+
+/* Stylish Paragraph Text */
+p {
+    font-size: 16px; /* Smaller font size */
+    color: #0d0c4f; /* Base color */
+    line-height: 1.75;
+    margin-bottom: 20px;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+    font-style: italic; /* Italicized */
+}
+
+/* Italicized text and highlights */
+p em {
+    color: #2980b9; /* Blue color for italicized text */
+    font-style: italic;
+    font-weight: 500;
+}
+
+strong {
+    color: #0b770e;
+    font-weight: 500;
+}
+
+p.highlight {
+    background-color: #f4f4f4;
+    border-left: 4px solid #2980b9;
+    padding: 10px 15px;
+    font-style: italic;
+    color: #2c3e50;
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+/* Text shadow for emphasis */
+p.stylish {
+    font-size: 16px; /* Smaller font size */
+    color: #7f8c8d;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+    letter-spacing: 0.75px;
+}
+
+ul {
+    list-style-type: disc;
+    margin-left: 40px;
+    color: #7f8c8d;
+}
+
+ul li {
+    margin-bottom: 10px;
+    font-size: 16px; /* Smaller font size */
+}
+
+/* Navbar Styles */
+.navbar {
+    background-color: #2c3e50;
+    color: white;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.navbar h1 {
+    font-size: 26px; /* Smaller font size */
+    margin: 0;
+    letter-spacing: 1.5px;
+}
+
+.navbar nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar nav ul li {
+    margin-left: 25px;
+}
+
+.navbar nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px; /* Smaller font size */
+    transition: color 0.3s;
+}
+
+.navbar nav ul li a:hover {
+    color: #2980b9;
+}
+
+/* Section Styles */
+section {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px; /* Space between sections */
+}
+
+section h2 {
+    margin-bottom: 20px;
+    color: #2980b9;
+}
+
+section h3 {
+    color: #34495e;
+    margin-top: 25px;
+}
+
+/* Paragraphs in Sections */
+section p {
+    color: #2c3e50; /* Stronger color for better contrast */
+    font-weight: 600; /* Stronger font-weight */
+    line-height: 1.85; /* Slightly increased line height for readability */
+    font-style: italic; /* Italicized */
+}
+
+section p strong {
+    color: #0b770e;
+    font-weight: 700; /* Make strong tags bolder */
+}
+
+/* List styles in Sections */
+section ul {
+    margin-left: 20px;
+    list-style-type: square;
+}
+
+section ul li {
+    margin-bottom: 10px;
+    font-size: 16px; /* Smaller font size */
+    color: #34495e; /* Slightly darker color for list items */
+}
+
+/* Education Section Styles */
+.education-item {
+    display: flex; /* Use flexbox for horizontal layout */
+    align-items: center; /* Align items vertically */
+    margin-bottom: 20px; /* Add spacing between education items */
+}
+
+.university-logo {
+    width: 100px; /* Set a fixed width for logos */
+    height: auto; /* Maintain aspect ratio */
+    margin-right: 20px; /* Space between logo and text */
+}
+
+.research-container {
+    display: flex; /* Enables flexbox layout */
+    flex-direction: column; /* Aligns items in a column */
+    gap: 20px; /* Space between items */
+}
+
+.research-item {
+    border: 1px solid #ccc; /* Optional: adds a border around each research item */
+    padding: 15px; /* Optional: adds padding inside each item */
+    border-radius: 8px; /* Optional: rounds the corners */
+    background-color: #f9f9f9; /* Optional: background color for items */
+    font-style: italic;
+}
+
+
+.projects-container {
+    display: flex; /* Enables flexbox layout */
+    flex-direction: column; /* Stacks items vertically */
+}
+
+.project.item {
+    border: 1px solid #ccc; /* Border around each project item */
+    border-radius: 5px; /* Rounded corners */
+    padding: 15px; /* Padding inside project items */
+    margin-bottom: 20px; /* Space between project items */
+    background-color: #f9f9f9; /* Light background color */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Slight shadow for depth */
+}
+
+.project-header {
+    display: flex; /* Enables flexbox layout for project header */
+    justify-content: space-between; /* Space between title and image */
+    align-items: center; /* Vertically center-aligns title and image */
+}
+
+.project-image {
+    width: 100px; /* Adjust the width as needed */
+    height: auto; /* Maintain aspect ratio */
+    margin-left: 20px; /* Space between the text and image */
+}
+
+.project-links {
+    margin-top: 10px; /* Adds space above the links */
+}
+
+.experience-container {
+    display: flex; /* Enables flexbox layout */
+    flex-direction: column; /* Aligns items in a column */
+    gap: 20px; /* Space between items */
+}
+
+.experience-item {
+    border: 1px solid #ccc; /* Optional: adds a border around each experience item */
+    padding: 15px; /* Optional: adds padding inside each item */
+    border-radius: 8px; /* Optional: rounds the corners */
+    background-color: #f9f9f9; /* Optional: background color for items */
+}
+
+
+.contact {
+    display: flex;
+    justify-content: center; /* Center the icons horizontally */
+    margin-top: 20px;
+}
+
+.icon {
+    font-size: 32px; /* Increased size of the icons */
+    color: #2980b9; /* Color of the icons */
+    margin: 0 30px; /* Increased space between icons */
+    text-decoration: none; /* Remove underline */
+    transition: color 0.3s; /* Smooth hover effect */
+}
+
+.icon:hover {
+    color: #1a5276; /* Darker color on hover */
+}
+
+/* Media Query for Mobile Screens */
+@media (max-width: 768px) {
+    .navbar h1 {
+        font-size: 22px;
+    }
+
+    .navbar nav ul li {
+        margin-left: 15px;
+    }
+
+    section {
+        padding: 20px;
+    }
+
+    section h2 {
+        font-size: 26px; /* Smaller font size */
+    }
+
+    section h3 {
+        font-size: 20px; /* Smaller font size */
+    }
+}
+
+/* Home Container Styles */
+.home-container {
+    display: flex; /* Use Flexbox for side-by-side layout */
+    align-items: center; /* Center the items vertically */
+    justify-content: space-between; /* Ensure space between photo and text */
+}
+
+.full-photo {
+    width: 35%; /* Set width of the photo */
+    height: auto;
+    border-radius: 10px; /* Add some styling to the image */
+}
+
+.about-contact {
+    width: 55%; /* Adjust width for about text */
+    padding-left: 20px; /* Add some space between photo and text */
+}
+
+/* Add subtle hover effect to project titles */
+section h3:hover {
+    color: #2980b9;
+    transition: color 0.3s ease-in-out;
+}
+
+/* Flexbox layout for the education section */
+.education-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Space between items */
+}
+
+.education-item {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.university-logo {
+    width: 100px;
+    height: auto;
+    margin-right: 20px;
+}
+
+.education-item div {
+    flex: 1; /* Ensure the text content takes the remaining space */
+}
+
+.education-item h3 {
+    font-size: 22px;
+    color: #34495e;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.education-item p {
+    font-size: 16px;
+    color: #0d0c4f;
+    line-height: 1.75;
+    margin-bottom: 10px;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+    font-style: italic;
+}

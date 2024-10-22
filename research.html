@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Research - Sandeep Kotapati</title>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="navbar">
+            <h1 style="font-family: 'Dancing Script', cursive;">Sandeep Chowdary Kotapati</h1>
+            <nav>
+                <ul>
+                    <li><a href="https://drive.google.com/file/d/1YvR-r6JPgNMERQ0gApYsZE3KCGCcydCJ/view?usp=sharing" target="_blank">Resume</a></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="research.html">Research</a></li>
+                    <li><a href="education.html">Education</a></li>
+                    <li><a href="experience.html">Experience</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="skills.html">Skills</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="content">
+        <section id="research">
+            <h2>Research Experience</h2>
+
+            <!-- Research Container (using Flexbox) -->
+            <div class="research-container">
+                <!-- AAIR Lab Item -->
+                <div class="research-item">
+                    <h3>Autonomous Agents and Intelligent Robots (AAIR) Lab, ASU, Tempe</h3>
+                    <p><strong>Researcher under <a href="https://pulkitverma.net/" target="_blank">Dr. Pulkit Verma</a> (now a PostDoc at MIT)</strong></p>
+                    <p><strong>Project:</strong> "Capability Assessment of Black box AI agents in Stochastic environments" (Mar 2024 – Sept 2024).</p>
+                    <p>This work is based on learning generalizable representation of agents by generatining their full set of parametrized capablities(PDDL type description of an action) based on a planning algorithm called QACE Query Based Autonomous Capability Algorithm.(Action-Model Learning)(Stochastic version of <a href="https://arxiv.org/abs/2107.13668" target="_blank">Discovering User-Interpretable Capabilities of Black-Box Planning Agents</a> )</p>
+                    <p><strong>Contributions:</strong></p>
+                    <p>1. Worked on building a policy based simulator with two agents, Q-learning and Monte Carlo Tree Search, where each agent interacts with SDMA(Sequential Decision Making Agent) and learns the policy of the agent. This simulator is used to for two purposes</p>
+                    <ul>
+                        <li><strong>Generating an execution trace to get partial descriptions of SDMA’s capabilities.</strong></li>
+                        <li><strong>Getting the next state while using the QACE algorithm(which inturn help to get the correct transition model
+                            and full set of parametrized capablities of the SDMA).</strong></li>
+                    </ul>
+                    <p>2. Worked on implementing the approach of combining planning and learning, to mitigate the long learning time taken by MCTS search under stochastic conditions, where we were breaking down the distant goal to sequence of smaller subgoals using goal-conditioned RL agents and using previously visited states for generating edge weights and nodes in the graph. (<a href="https://arxiv.org/abs/1906.05253" target="_blank">Search on the Replay Buffer: Bridging Planning and Reinforcement Learning by Benjamin Eysenbach, Ruslan Salakhutdinov, Sergey Levine</a>)</p>
+                    <p>I worked extensively with PDDL and RDDL domains and experimented with custom and industry-standard implementations in OpenAI Gym, Stable Baselines3, etc., for Q-learning, DQN, and MCTS.</p>
+                </div>
+
+                <!-- CS Lab Item -->
+                <div class="research-item">
+                    <h3>CS Lab, BITS Pilani Hyderabad, India</h3>
+                    <p><strong>Researcher under Prof. Chittaranjan Hota</strong> </p>
+                    <p><strong>Project:</strong> "Hybrid Fusion Learning" (Jan 2020 – May 2020).</p>
+                    <p>Assisted in implementation of feature extraction and autoencoders for Distributed ML research work in <a href="https://dl.acm.org/doi/abs/10.1145/3410338.3412339" target="_blank">(Hybrid fusion learning)</a> algorithms that achieve a good trade-off between computational complexity, communication latencies, and statistical performance</p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+</body>
+<footer style="text-align: center; padding: 2px; background-color: #f9f9f9; color: #000; font-size: 10px; position: fixed; bottom: 0; width: 100%;  line-height: 20px; border-top: 1px solid #ccc;">
+    <p style="margin: 0;">&copy; 2024 Sandeep Kotapati. All rights reserved.</p>
+</footer>
+</html>
