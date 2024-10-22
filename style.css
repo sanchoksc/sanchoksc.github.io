@@ -255,27 +255,7 @@ section ul li {
 }
 
 /* Media Query for Mobile Screens */
-@media (max-width: 768px) {
-    .navbar h1 {
-        font-size: 22px;
-    }
 
-    .navbar nav ul li {
-        margin-left: 15px;
-    }
-
-    section {
-        padding: 20px;
-    }
-
-    section h2 {
-        font-size: 26px; /* Smaller font size */
-    }
-
-    section h3 {
-        font-size: 20px; /* Smaller font size */
-    }
-}
 
 /* Home Container Styles */
 .home-container {
