@@ -1,6 +1,6 @@
 /* General Styles */
 body {
-    font-family: 'Open Sans', sans-serif; /* Consistent font style */
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
     margin: 0;
     padding: 0;
     background-color: #f9f9f9;
@@ -12,39 +12,35 @@ body {
     padding: 40px;
 }
 
+
 h2 {
-    font-size: 28px; /* Smaller font size */
+    font-size: 28px;
     color: #2c3e50;
     border-bottom: 2px solid #2980b9;
     padding-bottom: 10px;
     margin-bottom: 25px;
-    letter-spacing: 1px;
-    font-style: italic; /* Italicized */
+    letter-spacing: 0.8px;
 }
 
 h3 {
-    font-size: 22px; /* Smaller font size */
+    font-size: 22px;
     color: #34495e;
     margin-bottom: 15px;
-    font-weight: 600;
-    font-style: italic; /* Italicized */
+    font-weight: 500;
 }
 
 /* Stylish Paragraph Text */
 p {
-    font-size: 16px; /* Smaller font size */
-    color: #0d0c4f; /* Base color */
+    font-size: 16px;
+    color: #0d0c4f;
     line-height: 1.75;
     margin-bottom: 20px;
     font-weight: 400;
     letter-spacing: 0.5px;
-    font-style: italic; /* Italicized */
 }
 
-/* Italicized text and highlights */
 p em {
-    color: #2980b9; /* Blue color for italicized text */
-    font-style: italic;
+    color: #2980b9;
     font-weight: 500;
 }
 
@@ -57,14 +53,13 @@ p.highlight {
     background-color: #f4f4f4;
     border-left: 4px solid #2980b9;
     padding: 10px 15px;
-    font-style: italic;
     color: #2c3e50;
     box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.05);
 }
 
 /* Text shadow for emphasis */
 p.stylish {
-    font-size: 16px; /* Smaller font size */
+    font-size: 16px;
     color: #7f8c8d;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
     letter-spacing: 0.75px;
@@ -78,7 +73,7 @@ ul {
 
 ul li {
     margin-bottom: 10px;
-    font-size: 16px; /* Smaller font size */
+    font-size: 16px;
 }
 
 /* Navbar Styles */
@@ -93,7 +88,7 @@ ul li {
 }
 
 .navbar h1 {
-    font-size: 26px; /* Smaller font size */
+    font-size: 30px;
     margin: 0;
     letter-spacing: 1.5px;
 }
@@ -112,7 +107,7 @@ ul li {
 .navbar nav ul li a {
     color: white;
     text-decoration: none;
-    font-size: 16px; /* Smaller font size */
+    font-size: 16px;
     transition: color 0.3s;
 }
 
@@ -126,12 +121,13 @@ section {
     padding: 40px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin-bottom: 20px; /* Space between sections */
+    margin-bottom: 20px;
 }
 
 section h2 {
     margin-bottom: 20px;
     color: #2980b9;
+    font-weight: 400;
 }
 
 section h3 {
@@ -141,15 +137,14 @@ section h3 {
 
 /* Paragraphs in Sections */
 section p {
-    color: #2c3e50; /* Stronger color for better contrast */
-    font-weight: 600; /* Stronger font-weight */
-    line-height: 1.85; /* Slightly increased line height for readability */
-    font-style: italic; /* Italicized */
+    color: #2c3e50;
+    font-weight: 400;
+    line-height: 1.85;
 }
 
 section p strong {
     color: #0b770e;
-    font-weight: 700; /* Make strong tags bolder */
+    font-weight: 500;
 }
 
 /* List styles in Sections */
@@ -160,98 +155,95 @@ section ul {
 
 section ul li {
     margin-bottom: 10px;
-    font-size: 16px; /* Smaller font size */
-    color: #34495e; /* Slightly darker color for list items */
+    font-size: 16px;
+    color: #34495e;
 }
 
 /* Education Section Styles */
 .education-item {
-    display: flex; /* Use flexbox for horizontal layout */
-    align-items: center; /* Align items vertically */
-    margin-bottom: 20px; /* Add spacing between education items */
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
 }
 
 .university-logo {
-    width: 100px; /* Set a fixed width for logos */
-    height: auto; /* Maintain aspect ratio */
-    margin-right: 20px; /* Space between logo and text */
+    width: 100px;
+    height: auto;
+    margin-right: 20px;
 }
 
 .research-container {
-    display: flex; /* Enables flexbox layout */
-    flex-direction: column; /* Aligns items in a column */
-    gap: 20px; /* Space between items */
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 
 .research-item {
-    border: 1px solid #ccc; /* Optional: adds a border around each research item */
-    padding: 15px; /* Optional: adds padding inside each item */
-    border-radius: 8px; /* Optional: rounds the corners */
-    background-color: #f9f9f9; /* Optional: background color for items */
-    font-style: italic;
+    border: 1px solid #ccc;
+    padding: 15px;
+    border-radius: 8px;
+    background-color: #f9f9f9;
 }
 
-
 .projects-container {
-    display: flex; /* Enables flexbox layout */
-    flex-direction: column; /* Stacks items vertically */
+    display: flex;
+    flex-direction: column;
 }
 
 .project.item {
-    border: 1px solid #ccc; /* Border around each project item */
-    border-radius: 5px; /* Rounded corners */
-    padding: 15px; /* Padding inside project items */
-    margin-bottom: 20px; /* Space between project items */
-    background-color: #f9f9f9; /* Light background color */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Slight shadow for depth */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 20px;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .project-header {
-    display: flex; /* Enables flexbox layout for project header */
-    justify-content: space-between; /* Space between title and image */
-    align-items: center; /* Vertically center-aligns title and image */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .project-image {
-    width: 100px; /* Adjust the width as needed */
-    height: auto; /* Maintain aspect ratio */
-    margin-left: 20px; /* Space between the text and image */
+    width: 100px;
+    height: auto;
+    margin-left: 20px;
 }
 
 .project-links {
-    margin-top: 10px; /* Adds space above the links */
+    margin-top: 10px;
 }
 
 .experience-container {
-    display: flex; /* Enables flexbox layout */
-    flex-direction: column; /* Aligns items in a column */
-    gap: 20px; /* Space between items */
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 
 .experience-item {
-    border: 1px solid #ccc; /* Optional: adds a border around each experience item */
-    padding: 15px; /* Optional: adds padding inside each item */
-    border-radius: 8px; /* Optional: rounds the corners */
-    background-color: #f9f9f9; /* Optional: background color for items */
+    border: 1px solid #ccc;
+    padding: 15px;
+    border-radius: 8px;
+    background-color: #f9f9f9;
 }
-
 
 .contact {
     display: flex;
-    justify-content: center; /* Center the icons horizontally */
+    justify-content: center;
     margin-top: 20px;
 }
 
 .icon {
-    font-size: 32px; /* Increased size of the icons */
-    color: #2980b9; /* Color of the icons */
-    margin: 0 30px; /* Increased space between icons */
-    text-decoration: none; /* Remove underline */
-    transition: color 0.3s; /* Smooth hover effect */
+    font-size: 32px;
+    color: #2980b9;
+    margin: 0 30px;
+    text-decoration: none;
+    transition: color 0.3s;
 }
 
 .icon:hover {
-    color: #1a5276; /* Darker color on hover */
+    color: #1a5276;
 }
 
 /* Media Query for Mobile Screens */
@@ -269,30 +261,30 @@ section ul li {
     }
 
     section h2 {
-        font-size: 26px; /* Smaller font size */
+        font-size: 26px;
     }
 
     section h3 {
-        font-size: 20px; /* Smaller font size */
+        font-size: 20px;
     }
 }
 
 /* Home Container Styles */
 .home-container {
-    display: flex; /* Use Flexbox for side-by-side layout */
-    align-items: center; /* Center the items vertically */
-    justify-content: space-between; /* Ensure space between photo and text */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .full-photo {
-    width: 35%; /* Set width of the photo */
+    width: 35%;
     height: auto;
-    border-radius: 10px; /* Add some styling to the image */
+    border-radius: 10px;
 }
 
 .about-contact {
-    width: 55%; /* Adjust width for about text */
-    padding-left: 20px; /* Add some space between photo and text */
+    width: 55%;
+    padding-left: 20px;
 }
 
 /* Add subtle hover effect to project titles */
@@ -305,7 +297,7 @@ section h3:hover {
 .education-container {
     display: flex;
     flex-direction: column;
-    gap: 20px; /* Space between items */
+    gap: 20px;
 }
 
 .education-item {
@@ -324,14 +316,14 @@ section h3:hover {
 }
 
 .education-item div {
-    flex: 1; /* Ensure the text content takes the remaining space */
+    flex: 1;
 }
 
 .education-item h3 {
     font-size: 22px;
     color: #34495e;
     margin-bottom: 10px;
-    font-weight: 600;
+    font-weight: 500;
 }
 
 .education-item p {
@@ -341,5 +333,4 @@ section h3:hover {
     margin-bottom: 10px;
     font-weight: 400;
     letter-spacing: 0.5px;
-    font-style: italic;
 }
