@@ -394,11 +394,18 @@ section h3:hover {
         margin-top: 20px;
     }
 
+    strong{
+        font-size: 14px;
+    }
     section p {
         font-size: 14px;
     }
 
     section p ul li{
+        font-size: 14px;
+    }
+
+    section ul li{
         font-size: 14px;
     }
 
@@ -473,11 +480,20 @@ section h3:hover {
         font-size: 16px;
     }
 
+
+    strong{
+        font-size: 13px;
+    }
+    
     section p {
         font-size: 13px;
     }
 
     section p ul li {
+        font-size: 13px;
+    }
+
+    section ul li {
         font-size: 13px;
     }
 
