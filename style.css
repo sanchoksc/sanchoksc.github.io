@@ -336,10 +336,11 @@ section h3:hover {
 }
 
 /* Mobile-friendly styles for screen widths 768px and below */
+/* Mobile-friendly styles for screen widths 768px and below */
 @media (max-width: 768px) {
     /* Navbar adjustments for smaller screens */
     .navbar {
-        flex-direction: column;
+        flex-direction: column; /* Keep this if you want the navbar to stack on very small screens */
         padding: 10px;
     }
 
@@ -349,12 +350,14 @@ section h3:hover {
     }
 
     .navbar nav ul {
-        flex-direction: column;
-        align-items: center;
+        display: flex;              /* Use flexbox to arrange items */
+        flex-wrap: wrap;           /* Allow wrapping to the next line */
+        justify-content: flex-start; /* Align items to the start */
+        align-items: center;       /* Center items vertically */
     }
 
     .navbar nav ul li {
-        margin: 5px 0;
+        margin: 5px 10px;         /* Space between items */
     }
 
     /* General layout adjustments */
