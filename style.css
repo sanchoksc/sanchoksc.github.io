@@ -334,3 +334,121 @@ section h3:hover {
     font-weight: 400;
     letter-spacing: 0.5px;
 }
+
+/* Mobile-friendly styles for screen widths 768px and below */
+@media (max-width: 768px) {
+    /* Navbar adjustments for smaller screens */
+    .navbar {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .navbar h1 {
+        font-size: 22px;
+        margin-bottom: 10px;
+    }
+
+    .navbar nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar nav ul li {
+        margin: 5px 0;
+    }
+
+    /* General layout adjustments */
+    .content, .about-contact {
+        padding: 20px;
+    }
+
+    /* Home container - stacking layout */
+    .home-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .full-photo, .about-contact {
+        width: 100%;
+        padding: 0;
+        margin-bottom: 20px;
+    }
+
+    /* Section padding and typography scaling */
+    section {
+        padding: 20px;
+    }
+
+    section h2 {
+        font-size: 22px;
+        margin-bottom: 15px;
+    }
+
+    section h3 {
+        font-size: 18px;
+        margin-top: 20px;
+    }
+
+    section p {
+        font-size: 14px;
+    }
+
+    /* Education section */
+    .education-item {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 15px;
+    }
+
+    .university-logo {
+        width: 80px;
+        margin-bottom: 10px;
+    }
+
+    /* Research and projects containers */
+    .research-container, .projects-container, .experience-container {
+        gap: 15px;
+    }
+
+    .research-item, .project.item, .experience-item {
+        padding: 15px;
+    }
+
+    /* Icon size adjustments */
+    .icon {
+        font-size: 24px;
+        margin: 0 15px;
+    }
+}
+
+/* Additional adjustments for very small screens (max-width 480px) */
+@media (max-width: 480px) {
+    .navbar h1 {
+        font-size: 20px;
+    }
+
+    .navbar nav ul li a {
+        font-size: 14px;
+    }
+
+    section h2 {
+        font-size: 20px;
+    }
+
+    section h3 {
+        font-size: 16px;
+    }
+
+    section p, ul li {
+        font-size: 13px;
+    }
+
+    .content, section {
+        padding: 15px;
+    }
+
+    /* Adjust font sizes and spacing for easier readability on small screens */
+    h2, h3, p {
+        line-height: 1.5;
+    }
+}
