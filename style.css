@@ -417,6 +417,10 @@ section h3:hover {
         font-size: 14px;
     }
 
+    section p ul li{
+        font-size: 14px;
+    }
+
     /* Education section */
     .education-item {
         flex-direction: column;
