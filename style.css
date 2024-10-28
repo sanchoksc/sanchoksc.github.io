@@ -248,27 +248,7 @@ section ul li {
 }
 
 /* Media Query for Mobile Screens */
-@media (max-width: 768px) {
-    .navbar h1 {
-        font-size: 22px;
-    }
 
-    .navbar nav ul li {
-        margin-left: 15px;
-    }
-
-    section {
-        padding: 20px;
-    }
-
-    section h2 {
-        font-size: 26px;
-    }
-
-    section h3 {
-        font-size: 20px;
-    }
-}
 
 /* Home Container Styles */
 .home-container {
