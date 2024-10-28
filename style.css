@@ -335,6 +335,27 @@ section h3:hover {
     letter-spacing: 0.5px;
 }
 
+
+.courses {
+    display: flex;           /* Use flexbox to arrange items in a row */
+    flex-wrap: wrap;        /* Allow items to wrap to the next line */
+    gap: 10px;              /* Space between course items */
+    margin-top: 10px;       /* Space above the courses section */
+}
+
+.course {
+    padding: 5px 10px;      /* Add some padding around each course item */
+    background-color: #e0f7fa; /* Optional: Add a background color for visibility */
+    border-radius: 5px;  
+    flex: 0 1 auto;             /* Allow the width to vary */
+    box-sizing: border-box;      /* Include padding and border in width */
+    margin: 5px;     
+    height: 40px;           /* Ensure consistent spacing */
+    overflow: hidden;           /* Hide overflow content */
+    display: flex;              /* Use flexbox for centering text */
+    align-items: center;        /* Center content vertically */
+    justify-content: center;   /* Optional: Rounded corners for course items */
+}
 /* Mobile-friendly styles for screen widths 768px and below */
 /* Mobile-friendly styles for screen widths 768px and below */
 @media (max-width: 768px) {
@@ -423,7 +444,30 @@ section h3:hover {
         margin: 0 15px;
     }
 }
+/* Mobile-friendly styles for screen widths 768px and below */
+@media (max-width: 768px) {
+    .courses {
+        flex-wrap: wrap;               /* Allow items to wrap to new lines */
+        gap: 5px;                     /* Reduce gap for mobile */
+        padding: 5px;                 /* Reduce padding for mobile */
+    }
 
+    .course {
+        height: 40px;                 /* Adjust height for mobile */
+        flex: 0 1 auto;               /* Allow width to vary */
+        padding: 5px;                 /* Adjust padding for smaller screens */
+        margin: 3px;                  /* Adjust margin for mobile */
+        font-size: 14px;              /* Adjust font size for better readability */
+    }
+}
+
+/* Additional adjustments for very small screens (max-width 480px) */
+@media (max-width: 480px) {
+    .course {
+        height: 35px;                 /* Further adjust height for very small screens */
+        font-size: 12px;              /* Reduce font size for very small screens */
+    }
+}
 /* Additional adjustments for very small screens (max-width 480px) */
 @media (max-width: 480px) {
     .navbar h1 {
@@ -442,7 +486,11 @@ section h3:hover {
         font-size: 16px;
     }
 
-    section p, ul li {
+    section p {
+        font-size: 13px;
+    }
+
+    section p ul li {
         font-size: 13px;
     }
 
